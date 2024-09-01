@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container py-4 py-xl-5">
+  <div class="row gy-4 gy-md-0">
+    <div
+      class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"
+    >
+      <div style="max-width: 350px">
+        <h2 class="text-uppercase fw-bold">Leaf disease detection</h2>
+        <p class="my-3">
+          Welcome to the Leaf Disease Detection Project, where AI helps spot
+          plant diseases early to keep our crops healthy and ensure a steady
+          food supply.
+        </p>
+        <a
+          class="btn btn-primary btn-lg me-2"
+          role="button"
+          href="{{ url_for('ai_detect_page' )}}"
+          >&nbsp; &nbsp; Detect&nbsp; &nbsp;&nbsp;</a
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-xl-5 m-xl-5">
+        <img
+          class="rounded img-fluid w-100 fit-cover"
+          style="min-height: 300px"
+          src="{{ url_for('static', filename='assets/img/image.jpg') }}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-basic">
+  <footer>
+    <center>
+      <div style="padding: 5">
+        <a
+          target="_blank"
+          href="https://github.com/rock3roll/Plant-Leaf-Disease-Detection-System-.git"
+          ><img
+            src="static\img\github-mark-white.png"
+            height="40"
+            width="40" /></a
+        >&nbsp
+      </div>
+    </center>
+    <br />
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="/">Home</a></li>
+      <li class="list-inline-item laptop"><a href="/index">Detect</a></li>
+    </ul>
+  </footer>
+</div>
+
+{% endblock %}
